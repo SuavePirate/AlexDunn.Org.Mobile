@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="IoCConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +53,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Business\AlexDunn.Org.Definitions.Business.csproj">
+      <Project>{19b953fd-1dc2-436b-a8ba-80d096d1ec11}</Project>
+      <Name>AlexDunn.Org.Definitions.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Data\AlexDunn.Org.Definitions.Data.csproj">
+      <Project>{b9075450-d928-45b4-b2be-be4ebdac0366}</Project>
+      <Name>AlexDunn.Org.Definitions.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Models\AlexDunn.Org.Definitions.Models.csproj">
+      <Project>{198dd55a-34a7-4189-8a42-9959ebe4dec4}</Project>
+      <Name>AlexDunn.Org.Definitions.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\AlexDunn.Org.Infrastructure.Business\AlexDunn.Org.Infrastructure.Business.csproj">
+      <Project>{cc5cb28f-e68c-4961-b5ad-13e222c504e7}</Project>
+      <Name>AlexDunn.Org.Infrastructure.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\AlexDunn.Org.Infrastructure.Data\AlexDunn.Org.Infrastructure.Data.csproj">
+      <Project>{86f6c66a-0817-4015-bcb3-b1b2330a6d57}</Project>
+      <Name>AlexDunn.Org.Infrastructure.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

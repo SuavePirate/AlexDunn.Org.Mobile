@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PostService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -48,6 +49,21 @@
       <HintPath>..\..\packages\Xam.Plugins.Settings.2.5.3\lib\portable-net45+wp80+win8+wpa81\Plugin.Settings.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Business\AlexDunn.Org.Definitions.Business.csproj">
+      <Project>{19B953FD-1DC2-436B-A8BA-80D096D1EC11}</Project>
+      <Name>AlexDunn.Org.Definitions.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Data\AlexDunn.Org.Definitions.Data.csproj">
+      <Project>{B9075450-D928-45B4-B2BE-BE4EBDAC0366}</Project>
+      <Name>AlexDunn.Org.Definitions.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Models\AlexDunn.Org.Definitions.Models.csproj">
+      <Project>{198dd55a-34a7-4189-8a42-9959ebe4dec4}</Project>
+      <Name>AlexDunn.Org.Definitions.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

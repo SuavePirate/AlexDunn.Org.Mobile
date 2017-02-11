@@ -83,6 +83,25 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Business\AlexDunn.Org.Definitions.Business.csproj">
+      <Project>{19b953fd-1dc2-436b-a8ba-80d096d1ec11}</Project>
+      <Name>AlexDunn.Org.Definitions.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Definitions\AlexDunn.Org.Definitions.Models\AlexDunn.Org.Definitions.Models.csproj">
+      <Project>{198dd55a-34a7-4189-8a42-9959ebe4dec4}</Project>
+      <Name>AlexDunn.Org.Definitions.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlexDunn.Org.Clients.Forms.Startup\AlexDunn.Org.Clients.Forms.Startup.csproj">
+      <Project>{3762cc0e-6c4a-426c-aafa-f4912bc18738}</Project>
+      <Name>AlexDunn.Org.Clients.Forms.Startup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
